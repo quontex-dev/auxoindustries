@@ -162,7 +162,7 @@ export default function Machine() {
                   {Object.values(row).map((cell, colIndex) => (
                     <td
                       key={colIndex}
-                      className={`px-6 py-6 text-center text-sm md:text-base border-x border-t border-[#EB7A2E] whitespace-nowrap ${
+                      className={`px-10 py-6 text-center text-sm md:text-base border-x border-t border-[#EB7A2E] whitespace-nowrap ${
                         rowIndex === rows.length - 1 ? "border-b" : ""
                       }`}
                     >

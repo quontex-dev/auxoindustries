@@ -13,7 +13,7 @@ export default function MissionVision() {
   return (
     <section
       aria-labelledby="mission-vision-heading"
-      className="relative w-full py-20 px-6 text-white"
+      className="relative w-full py-5 px-6 text-white"
       style={{
         backgroundImage: "url('/images/background.png')",
         backgroundSize: "cover",
@@ -28,7 +28,7 @@ export default function MissionVision() {
         {/* Main Heading */}
         <h2
           id="mission-vision-heading"
-          className="text-3xl md:text-4xl text-[#EB7A2E] font-bold text-center mb-16"
+          className="text-3xl md:text-4xl text-[#EB7A2E] font-bold text-center mb-5"
         >
           Our Mission & Vision
         </h2>
@@ -110,7 +110,7 @@ export default function MissionVision() {
           {/* Section 2 */}
           <div>
             <h3 className="text-2xl md:text-3xl font-semibold text-center mb-12 text-[#EB7A2E]">
-              Locally Made with Industry's Experience!
+              Locally Made with Industry&apos;s Experience!
             </h3>
             <div className="flex flex-col md:flex-row-reverse items-center gap-8">
               <div

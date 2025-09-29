@@ -7,6 +7,10 @@
 body {
   font-family: var(--font-baloo2), sans-serif;
 }
+html, body{
+
+  overflow-x: hidden;
+}
 
 
 

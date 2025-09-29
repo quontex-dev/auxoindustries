@@ -45,7 +45,10 @@ const Milestones = () => {
 
         <div className="space-y-16">
           {milestones.map((item, index) => (
-            <div key={index} className="relative flex items-center w-full">
+            <div
+              key={index}
+              className="relative flex items-center w-full sm:gap-20"
+            >
               {/* Left Turnover */}
               <div className="w-1/2 pr-8 text-right">
                 <h4 className="text-lg md:text-[25px] font-semibold">

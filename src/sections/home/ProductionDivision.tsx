@@ -3,7 +3,6 @@
 
 import { useEffect } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { motion } from "framer-motion";
@@ -55,7 +54,7 @@ export default function ProductionDivision() {
   return (
     <section
       aria-labelledby="production-heading"
-      className="relative w-full py-20 px-6 text-white"
+      className="relative w-full py-10 px-6 text-white"
       // Background image is fixed and subtle: use inline style so tailwind doesn't need custom config
       style={{
         backgroundImage: "url('/images/background.png')",

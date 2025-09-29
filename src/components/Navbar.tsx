@@ -3,7 +3,8 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
-import { Menu, X } from "lucide-react"; // install lucide-react if not installed
+import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const Navbar = () => {
   const [show, setShow] = useState(true);
@@ -40,12 +41,14 @@ const Navbar = () => {
         transition={{ duration: 0.4, ease: "easeInOut" }}
         className="fixed top-0 left-0 w-full z-50 bg-white/40 backdrop-blur-sm "
       >
-        <div className="flex items-center justify-between px-8 py-3 max-w-7xl mx-auto">
+        <div className="flex items-center justify-between px-8 py-3 max-w-8xl mx-auto">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <img
+            <Image
               src="/images/auxo-logo.png"
               alt="Logo"
+              width={100}
+              height={100}
               className="h-20 w-20 object-contain"
             />
             <span className="sm:text-[30px] text-black">AUXO</span>
