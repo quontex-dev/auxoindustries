@@ -38,9 +38,9 @@ const Navbar = () => {
         initial={{ y: -100 }}
         animate={{ y: show ? 0 : -100 }}
         transition={{ duration: 0.4, ease: "easeInOut" }}
-        className="fixed top-0 left-0 w-full z-50 bg-white/10 backdrop-blur-sm "
+        className="fixed top-0 left-0 w-full z-50 bg-white/40 backdrop-blur-sm "
       >
-        <div className="flex items-center justify-between px-8 py-5 max-w-7xl mx-auto">
+        <div className="flex items-center justify-between px-8 py-3 max-w-7xl mx-auto">
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <img
