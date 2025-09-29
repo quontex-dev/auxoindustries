@@ -8,8 +8,17 @@ const Milestones = () => {
       description: "Ventured into Production",
       turnover: "255.13 INR",
     },
-    { year: "2016 - 2017", description: "", turnover: "136.35 INR" },
-    { year: "2017 - 2018", description: "", turnover: "760.44 INR" },
+    {
+      year: "2016 - 2017",
+      description: "Certified With ISO 9001 Appreciated by Customers",
+      turnover: "136.35 INR",
+    },
+    {
+      year: "2017 - 2018",
+      description:
+        " Achieved 10 CR Turnover and started supply chain with OEMs",
+      turnover: "760.44 INR",
+    },
     { year: "2018 - 2019", description: "", turnover: "1655.88 INR" },
     { year: "2019 - 2020", description: "", turnover: "302.68 INR" },
     { year: "2020 - 2021", description: "", turnover: "4945.74 INR" },
@@ -32,11 +41,14 @@ const Milestones = () => {
       {/* Timeline */}
       <div className="relative max-w-4xl mx-auto">
         {/* Center line */}
-        <div className="absolute left-1/2 top-0 h-full border-l-2 border-dotted border-gray-500 transform -translate-x-1/2"></div>
+        <div className="absolute left-1/2 top-0 h-full border-l-2 border-dotted border-[#EB7A2E] transform -translate-x-1/2"></div>
 
         <div className="space-y-16">
           {milestones.map((item, index) => (
-            <div key={index} className="relative flex items-center w-full">
+            <div
+              key={index}
+              className="relative flex items-center w-full sm:gap-20"
+            >
               {/* Left Turnover */}
               <div className="w-1/2 pr-8 text-right">
                 <h4 className="text-lg md:text-[25px] font-semibold">
@@ -46,12 +58,12 @@ const Milestones = () => {
 
               {/* Middle dot */}
               <div className="w-0 flex flex-col items-center">
-                <div className="w-5 h-5 rounded-full bg-orange-500 border-4 border-white z-10"></div>
+                <div className="w-5 h-5 rounded-full bg-orange-500  z-10"></div>
               </div>
 
               {/* Right Year */}
               <div className="w-1/2 pl-8">
-                <p className="text-gray-300 text-base md:text-[35px] font-medium">
+                <p className="text-[#EB7A2E] text-base md:text-[35px] font-medium">
                   {item.year}
                 </p>
                 <p className="text-gray-300 text-base md:text-[25px] font-medium">

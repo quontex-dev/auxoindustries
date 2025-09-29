@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Playfair_Display } from "next/font/google";
+import { Baloo_2, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const baloo2 = Baloo_2({
   subsets: ["latin"],
+  variable: "--font-baloo2",
 });
 
 const playfair = Playfair_Display({
@@ -86,9 +86,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body
-        className={`${playfair.variable} ${geistSans.variable} antialiased`}
-      >
+      <body className={`${playfair.variable} ${baloo2.variable} antialiased`}>
         {children}
       </body>
     </html>

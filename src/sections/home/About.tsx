@@ -8,7 +8,9 @@ const About = () => {
     <section className="w-full bg-white py-16 px-6">
       {/* Heading */}
       <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
-        About Auxo Industries Pvt. Ltd.
+        About
+        <span className="text-[#EB7A2E]"> Auxo </span>
+        Industries Pvt. Ltd.
       </h2>
 
       {/* Images */}
@@ -34,9 +36,9 @@ const About = () => {
       </div>
 
       {/* Div A + Div B */}
-      <div className="flex flex-col md:flex-row w-full max-w-5xl mx-auto border-gray-300">
+      <div className="flex flex-col md:flex-row w-full max-w-7xl mx-auto border-[#EB7A2E]">
         {/* Div A */}
-        <div className="flex flex-col items-center justify-center flex-1 border-b md:border-b-0 md:border-r border-gray-300 py-8 px-6">
+        <div className="flex flex-col items-center justify-center flex-1 border-b  md:border-b-10 md:border-r-10 border-[#EB7A2E] py-8 px-6">
           <span className="text-[150px] sm:text-[200px] md:text-[280px] font-bold leading-none text-orange-500">
             11
           </span>
@@ -46,8 +48,8 @@ const About = () => {
         </div>
 
         {/* Div B */}
-        <div className="flex flex-col justify-center flex-1 border-t md:border-t-0 border-gray-300 py-8 px-6 text-center">
-          <p className="text-gray-600 text-base md:text-[25px] mb-4">
+        <div className="flex flex-col justify-center flex-1 border-t md:border-t-10 border-[#EB7A2E] py-8 px-6 text-center">
+          <p className="text-gray-600 text-base md:text-[25px] mb-4 ">
             Auxo Industries began its journey in 2015 with M/S. Auxo Polymers.
             Since 2015, Auxo Industries has been on a continuous growth
             trajectory, entering into newer products and offerings for various
@@ -78,11 +80,16 @@ const About = () => {
           World successfully for past Seven years.
         </div>
         <div className="font-semibold text-[20px] sm:text-[24px] md:text-[30px]">
-          Since 2015, Auxo Industries has grown 150 times in revenue and crossed
-          revenue of INR 150 Crore in FY 21-22. Currently, Auxo Industries has
-          3 plants under 3 entities spread across all major industrial areas in
-          Roorkee in India. All Auxo Industries plants are ISO 9001:2008
-          certified.
+          Since 2015, Auxo Industries has
+          <span className="text-[#EB7A2E]">
+            {" "}
+            grown 150 times in revenue
+          </span>{" "}
+          and crossed revenue of{" "}
+          <span className="text-[#EB7A2E]"> INR 150 Crore </span> in FY 21-22.
+          Currently, Auxo Industries has 3 plants under 3 entities spread across
+          all major industrial areas in Roorkee in India. All Auxo Industries
+          plants are ISO 9001:2008 certified.
         </div>
         <div>
           Auxo Industries Pvt. Ltd. has expertise in manufacturing large part

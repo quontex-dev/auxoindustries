@@ -3,6 +3,9 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/sections/home/Hero";
 import About from "@/sections/home/About";
 import MileStones from "@/sections/home/MileStones";
+import ProductionDivision from "@/sections/home/ProductionDivision";
+import MissionVision from "@/sections/home/MissionVision";
+import Machine from "@/sections/home/Machine";
 
 export const metadata: Metadata = {
   title: "About Us - Auxo Industries | Auxo Polymers | Auxo Thermopack",
@@ -44,6 +47,12 @@ const page = () => {
       <About />
       {/* MILESTONES SECTION */}
       <MileStones />
+      {/* PRODUCTION DIVISION SECTION */}
+      <ProductionDivision />
+      {/* MISSION VISION SECTION */}
+      <MissionVision />
+      {/* MACHINE SECTION */}
+      <Machine />
     </div>
   );
 };
