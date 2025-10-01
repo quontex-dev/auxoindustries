@@ -13,19 +13,19 @@ const Hero = () => {
   ];
 
   const names = [
+    "AMBER",
     "DIXON",
-    "DIXON",
-    "MAHARAJA",
-    "EXIDE",
-    "PG",
     "EASTMAN",
+    "EXIDE",
+    "PGEL",
+    "MAHARAJA",
     "LUMINOUS",
     "SUN INDUSTRIES",
     "GENUS",
   ];
 
   return (
-    <section className="relative w-full">
+    <section className="relative w-full" id="#">
       {/* Fullscreen Slider */}
       <div className="h-[92vh]">
         <Swiper
