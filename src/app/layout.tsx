@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Baloo_2, Playfair_Display } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/Footer";
 
 const baloo2 = Baloo_2({
   subsets: ["latin"],
@@ -88,6 +89,7 @@ export default function RootLayout({
       </head>
       <body className={`${playfair.variable} ${baloo2.variable} antialiased`}>
         {children}
+        <Footer />
       </body>
     </html>
   );

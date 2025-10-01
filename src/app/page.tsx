@@ -6,6 +6,8 @@ import MileStones from "@/sections/home/MileStones";
 import ProductionDivision from "@/sections/home/ProductionDivision";
 import MissionVision from "@/sections/home/MissionVision";
 import Machine from "@/sections/home/Machine";
+import Founders from "@/components/Founders";
+import Contact from "@/components/Contact";
 
 export const metadata: Metadata = {
   title: "About Us - Auxo Industries | Auxo Polymers | Auxo Thermopack",
@@ -53,6 +55,10 @@ const page = () => {
       <MissionVision />
       {/* MACHINE SECTION */}
       <Machine />
+      {/* FOUNDERS SECTION */}
+      <Founders />
+      {/* CONTACT SECTION */}
+      <Contact />
     </div>
   );
 };
