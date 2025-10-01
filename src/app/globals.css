@@ -3,9 +3,43 @@
 @import "swiper/css";
 @import "swiper/css/pagination";
 @import "swiper/css/navigation";
-/* 
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-} */
+  font-family: var(--font-baloo2), sans-serif;
+}
+html, body{
+
+  overflow-x: hidden;
+}
+
+
+
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #fff;
+  /* background of the scrollbar track */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: orange;
+  /* the color of the scrollbar thumb */
+  border-radius: 10px;
+  border: 3px solid #fff;
+  /* creates a padding effect */
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: orange white;
+  /* thumb and track */
+}
+
+
+

@@ -13,19 +13,19 @@ const Hero = () => {
   ];
 
   const names = [
+    "AMBER",
     "DIXON",
-    "DIXON",
-    "MAHARAJA",
-    "EXIDE",
-    "PG",
     "EASTMAN",
+    "EXIDE",
+    "PGEL",
+    "MAHARAJA",
     "LUMINOUS",
     "SUN INDUSTRIES",
     "GENUS",
   ];
 
   return (
-    <section className="relative w-full">
+    <section className="relative w-full" id="#">
       {/* Fullscreen Slider */}
       <div className="h-[92vh]">
         <Swiper
@@ -44,11 +44,11 @@ const Hero = () => {
               >
                 {/* Centered Overlay */}
                 <div className="absolute inset-0  flex flex-col items-center justify-center text-center px-6">
-                  <div className="max-w-4xl">
+                  <div className="max-w-5xl">
                     <h1 className="text-4xl md:text-[100px] font-[700] text-[#EB7A2E] drop-shadow-lg font-[playfair]">
                       AUXO
                     </h1>
-                    <h1 className="text-[30px] md:text-[80px] font-[700] text-black mt-2 drop-shadow-lg font-[playfair]">
+                    <h1 className="text-[30px] md:text-[80px] font-[700] text-black mt-2 drop-shadow-lg font-[playfair] tracking-wider">
                       INDUSTRIES PVT LTD
                     </h1>
                     <p className="mt-4 text-black text-md md:text-[25px]">
@@ -75,7 +75,7 @@ const Hero = () => {
       </div>
 
       {/* Names Section (below slider) */}
-      <div className="w-full sm:h-[8vh] bg-[#EB7A2E] flex flex-wrap items-center justify-center gap-6 sm:px-6">
+      <div className="w-full sm:h-[8vh] bg-[#EB7A2E] flex flex-wrap items-center justify-around gap-6 sm:px-6">
         {names.map((name, i) => (
           <div key={i} className="flex items-center space-x-2">
             <Star className="text-white w-5 h-5" />
