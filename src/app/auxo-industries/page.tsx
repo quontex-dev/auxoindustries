@@ -1,22 +1,25 @@
-import Navbar from '@/components/Navbar'
-import Hero from '@/sections/auxo-industries/Hero'
-import Manufacturing from '@/sections/auxo-industries/manufacturing'
-import ProductionCapabilities from '@/sections/auxo-industries/productioncapabilites'
+import Navbar from "@/components/Navbar";
+import Hero from "@/sections/auxo-industries/Hero";
+import Manufacturing from "@/sections/auxo-industries/manufacturing";
+import ProductionCapabilities from "@/sections/auxo-industries/productioncapabilites";
+import Contact from "@/components/Contact";
 
 const page = () => {
   return (
     <div>
-      <Navbar/>
+      <Navbar />
       {/* hero section */}
-      <Hero/>
+      <Hero />
       {/* manufacturing */}
       <Manufacturing />
       {/* productioncapabilities */}
-      <ProductionCapabilities/>
+      <ProductionCapabilities />
       {/* partners */}
-    
-    </div>
-  )
-}
 
-export default page
+      {/* Contact US */}
+      <Contact />
+    </div>
+  );
+};
+
+export default page;

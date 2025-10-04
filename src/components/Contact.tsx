@@ -6,8 +6,8 @@ import "aos/dist/aos.css";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
+    name: "",
+    phone: "",
     email: "",
     message: "",
   });
@@ -24,9 +24,9 @@ export default function Contact() {
   };
 
   const validate = () => {
-    if (!formData.firstName.trim() || !formData.lastName.trim()) return false;
+    if (!formData.name.trim() || !formData.phone.trim()) return false;
     if (!/\S+@\S+\.\S+/.test(formData.email)) return false;
-    if (formData.message.trim().length < 10) return false;
+    if (formData.message.trim().length < 1) return false;
     return true;
   };
 
@@ -39,20 +39,27 @@ export default function Contact() {
 
     try {
       const scriptURL =
-        "https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec"; // replace with your actual script
+        "https://script.google.com/macros/s/AKfycbyDEklJRlnnAde_QyFkCh3Vt4ZkWqNEBVCki3ZrF0H3536CZIiuUBlJYoLaDBJozXK1aA/exec";
+
+      const form = e.target as HTMLFormElement;
+      const formDataToSend = new FormData(form);
+
       const response = await fetch(scriptURL, {
         method: "POST",
-        body: new FormData(e.target as HTMLFormElement),
+        body: formDataToSend,
       });
+
+      console.log(response);
+
       if (response.ok) {
-        setFormData({ firstName: "", lastName: "", email: "", message: "" });
+        setFormData({ name: "", phone: "", email: "", message: "" });
         setStatus("success");
       } else {
         setStatus("error");
       }
     } catch (error) {
+      console.error("Submission error:", error);
       setStatus("error");
-      console.log(error);
     }
   };
 
@@ -99,18 +106,18 @@ export default function Contact() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <input
                 type="text"
-                name="firstName"
-                placeholder="First Name"
-                value={formData.firstName}
+                name="name"
+                placeholder="Name"
+                value={formData.name}
                 onChange={handleChange}
                 className="w-full px-4 py-3 border-2 rounded-lg focus:ring-2 focus:ring-[#EB7A2E] outline-none bg-white shadow-sm"
                 required
               />
               <input
-                type="text"
-                name="lastName"
-                placeholder="Last Name"
-                value={formData.lastName}
+                type="phone"
+                name="phone"
+                placeholder="Phone"
+                value={formData.phone}
                 onChange={handleChange}
                 className="w-full px-4 py-3 border-2 rounded-lg focus:ring-2 focus:ring-[#EB7A2E] outline-none bg-white shadow-sm"
                 required
@@ -143,7 +150,7 @@ export default function Contact() {
             <div className="flex justify-center space-x-4">
               <button
                 type="submit"
-                className="bg-[#EB7A2E] w-[176px] text-[20px] border-2 border-black text-white font-semibold py-3 px-6 rounded-lg transition duration-300 ease-in-out hover:bg-[#d8681f] hover:shadow-lg"
+                className="bg-[#EB7A2E] w-[176px] text-[20px] border-2 border-black text-white font-semibold py-3 px-6 rounded-lg transition duration-300 ease-in-out hover:bg-[#d8681f] hover:shadow-lg cursor-pointer"
               >
                 Submit
               </button>
