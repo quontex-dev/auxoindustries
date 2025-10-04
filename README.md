@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Here's a clear step-by-step guide for your situation. You’ve already:
 
-## Getting Started
+- Worked on branch `dhiraj`, raised 2-3 PRs, and all have been merged into `main`.
+- Now the developer working on `neeraj` branch has completed their work.
+- Goal: Get **code from both branches (`dhiraj` and `neeraj`) into `main`** so that everyone can pull latest and proceed.
 
-First, run the development server:
+---
+
+### ✅ Step-by-step Plan:
+
+#### 1. **Verify that `dhiraj` work is already in `main`**
+
+Since you've confirmed that all PRs from `dhiraj` are merged, you don’t need to do anything more with that branch.
+
+---
+
+#### 2. **Make sure `neeraj` branch is up to date with latest `main`**
+
+Before merging `neeraj` to `main`, it's good practice to ensure it includes latest changes from `main`.
+
+On Neeraj's local machine (or whoever is working on the `neeraj` branch):
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Switch to neeraj branch
+git checkout neeraj
+
+# Fetch the latest updates
+git fetch origin
+
+# Merge latest main into neeraj (to resolve any conflicts early)
+git merge origin/main
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+> 🔍 If there are any merge conflicts, fix them now, test the code, and commit the merge resolution.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+#### 3. **Push the updated `neeraj` branch (if any changes happened)**
 
-## Learn More
+```bash
+git push origin neeraj
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### 4. **Create a Pull Request from `neeraj` → `main`**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Go to GitHub / GitLab (whichever platform you're using).
+- Open a **Pull Request** from `neeraj` branch into `main`.
+- Wait for code review and approval.
+- Once approved, **merge the PR into `main`**.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#### 5. **Everyone pulls the latest `main`**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Once the `neeraj` PR is merged into `main`, now both your changes (`dhiraj` and `neeraj`) are in `main`.
+
+Now, everyone should do:
+
+```bash
+git checkout main
+git pull origin main
+```
+
+If you want to continue working on your own branches, you can then update your branches too:
+
+```bash
+# Update dhiraj branch
+git checkout dhiraj
+git merge main
+
+# Or rebase if preferred
+# git rebase main
+```
+
+Same for `neeraj` if needed.
+
+---
+
+### ✅ Summary:
+
+- ✅ Dhiraj's work already in `main`
+- 🔄 Update `neeraj` branch with latest `main`
+- 📦 Create and merge PR from `neeraj` → `main`
+- 🔄 Everyone pulls latest `main` and continues work
+
+Let me know if you want to squash commits, rebase, or handle conflicts in a specific way.

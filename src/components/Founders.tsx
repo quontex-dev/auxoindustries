@@ -93,8 +93,8 @@ export default function Founders() {
 
   const founders = [
     {
-      name: "Mr. Harpal Singh",
-      designation: "Managing Director",
+      name: "Mr. Harpal Dhanda",
+      designation: "Director",
       image: "/images/founder-1.png",
     },
     {
@@ -108,7 +108,7 @@ export default function Founders() {
       image: "/images/founder-3.png",
     },
     {
-      name: "Mr. BrishSankar Mohanty",
+      name: "Mr. Biraj Sankar Mohanty",
       designation: "Director",
       image: "/images/founder-4.png",
     },
