@@ -17,7 +17,7 @@ type Division = {
 const divisions: Division[] = [
   {
     title: "Auxo Industries Pvt. Ltd.",
-    subtitle: "Injection Moduled Plastic Products",
+    subtitle: "Injection Moulded Plastic Products",
     image: "/images/production-division-1.png",
     reverse: false,
   },

@@ -75,9 +75,9 @@ const About = () => {
           Products manufacturing, an INR 150 Crore (Revenue) conglomerate
           headquartered in Roorkee, Uttarakhand, India, and having manufacturing
           facilities across the Industrial Area of Bhagawanpur, Roorkee,
-          Haridwar, serving all the major for automotive, packaging, defense,
+          Haridwar, serving all the major automotive, packaging, defense,
           marine, electrical, consumer products and appliances OEMs across the
-          World successfully for past Seven years.
+          World successfully for the past 7 years.
         </div>
         <div className="font-semibold text-[20px] sm:text-[24px] md:text-[30px]">
           Since 2015, Auxo Industries has
@@ -86,8 +86,8 @@ const About = () => {
             grown 150 times in revenue
           </span>{" "}
           and crossed revenue of{" "}
-          <span className="text-[#EB7A2E]"> INR 150 Crore </span> in FY 21-22.
-          Currently, Auxo Industries has 3 plants under 3 entities spread across
+          <span className="text-[#EB7A2E]"> INR 150 Crore </span> in FY 2024-25.
+          Currently, Auxo Industries has 2 plants under 1 entity spread across
           all major industrial areas in Roorkee in India. All Auxo Industries
           plants are ISO 9001:2008 certified.
         </div>
@@ -99,7 +99,7 @@ const About = () => {
           appliances.
         </div>
         <div>
-          Auxo group has three plants under separate three entities to cater for
+          Auxo Group has three plants under separate three entities to cater for
           the production of injection moulded plastic products, assembly lines,
           and Thermocol manufacturing plants for packaging & engineering
           applications.

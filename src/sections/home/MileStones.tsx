@@ -15,8 +15,7 @@ const Milestones = () => {
     },
     {
       year: "2017 - 2018",
-      description:
-        " Achieved 10 CR Turnover and started supply chain with OEMs",
+      description: " Achieved 8 CR Turnover and started supply chain with OEMs",
       turnover: "760.44 INR",
     },
     { year: "2018 - 2019", description: "", turnover: "1655.88 INR" },
@@ -34,7 +33,7 @@ const Milestones = () => {
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold">Our Journey</h2>
         <h3 className="text-xl md:text-2xl text-orange-500 mt-2">
-          Milestones Achieved
+          Milestones Achieved in Lakhs
         </h3>
       </div>
 

@@ -119,7 +119,7 @@ export default function Footer() {
           {/* First Column */}
           <div>
             <h5 className="text-[20px] font-semibold text-white mb-2">
-              Auxo Industries Pbt. Ltd. Unit I
+              Auxo Industries Pvt. Ltd. Unit I
             </h5>
             <p className="text-[18px] text-white">
               Plot No. 138 A & B, Kh No 6 & 7, <br /> Shiv Ganga Industrial
@@ -138,7 +138,7 @@ export default function Footer() {
           {/* Second Column */}
           <div>
             <h5 className="text-[20px] font-semibold text-white mb-2">
-              Auxo Industries Pbt. Ltd. Unit II
+              Auxo Industries Pvt. Ltd. Unit II
             </h5>
             <p className="text-[18px] text-white">
               Plot No. 10 & 11, Raipur Industrial Area <br /> Vill. Bhagwanpur,
