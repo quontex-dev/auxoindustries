@@ -7,9 +7,10 @@ import { Star } from "lucide-react";
 
 const Hero = () => {
   const slides = [
-    "/images/home-hero-slider.png",
-    "/images/home-hero-slider.png",
-    "/images/home-hero-slider.png",
+    "/images/home-hero-slider-1.png",
+    "/images/home-hero-slider-2.png",
+    "/images/home-hero-slider-3.png",
+    "/images/home-hero-slider-4.png",
   ];
 
   const names = [
@@ -48,10 +49,10 @@ const Hero = () => {
                     <h1 className="text-4xl md:text-[100px] font-[700] text-[#EB7A2E] drop-shadow-lg font-[playfair]">
                       AUXO
                     </h1>
-                    <h1 className="text-[30px] md:text-[80px] font-[700] text-black mt-2 drop-shadow-lg font-[playfair] tracking-wider">
+                    <h1 className="text-[30px] md:text-[80px] font-[700] text-white mt-2 drop-shadow-lg font-[playfair] tracking-wider">
                       INDUSTRIES PVT LTD
                     </h1>
-                    <p className="mt-4 text-black text-md md:text-[25px]">
+                    <p className="mt-4 text-white text-md md:text-[25px]">
                       Auxo Industries Pvt. Ltd., headquartered in Roorkee,
                       Uttarakhand, is a leading Injection Moulding Plastic
                       Products manufacturer with INR 150 Crore revenue. Founded

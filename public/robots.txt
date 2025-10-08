@@ -1,0 +1,21 @@
+# *
+User-agent: *
+Allow: /
+
+# ChatGPT-User
+User-agent: ChatGPT-User
+Allow: /
+
+# *
+User-agent: *
+Disallow: /admin/
+Disallow: /api/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /drafts/
+
+# Host
+Host: https://auxoindustries.com
+
+# Sitemaps
+Sitemap: https://auxoindustries.com/sitemap.xml

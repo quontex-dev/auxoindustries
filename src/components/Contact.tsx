@@ -38,8 +38,7 @@ export default function Contact() {
     }
 
     try {
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbyDEklJRlnnAde_QyFkCh3Vt4ZkWqNEBVCki3ZrF0H3536CZIiuUBlJYoLaDBJozXK1aA/exec";
+      const scriptURL = "https://sheetdb.io/api/v1/k05ud97qwy841";
 
       const form = e.target as HTMLFormElement;
       const formDataToSend = new FormData(form);
