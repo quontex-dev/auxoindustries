@@ -29,7 +29,7 @@ const divisions: Division[] = [
   },
   {
     title: "Auxo Industries Pvt. Ltd.",
-    subtitle: "Injection Moulded Platic Product & Assembly Line",
+    subtitle: "Injection Moulded Plastic Product & Assembly Line",
     image: "/images/production-division-3.png",
     reverse: false,
   },
