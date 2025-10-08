@@ -19,7 +19,7 @@ const Milestones = () => {
       turnover: "760.44 INR",
     },
     { year: "2018 - 2019", description: "", turnover: "1655.88 INR" },
-    { year: "2019 - 2020", description: "", turnover: "302.68 INR" },
+    { year: "2019 - 2020", description: "", turnover: "3302.68 INR" },
     { year: "2020 - 2021", description: "", turnover: "4945.74 INR" },
     { year: "2021 - 2022", description: "", turnover: "8594.61 INR" },
     { year: "2022 - 2023", description: "", turnover: "11745.35 INR" },
