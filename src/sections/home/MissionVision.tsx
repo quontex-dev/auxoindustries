@@ -175,7 +175,7 @@ export default function MissionVision() {
                   {" "}
                   {/* reduced gap */}
                   {[
-                    "Number of Plants: #3",
+                    "Number of Plants: #2",
                     "Plants' Covered Area: 12,000 Square Feet",
                     "Number of Machines: #30 + #19 machines for Thermopack",
                     "Injection Moulding Machines: 100-1250 Ton",
