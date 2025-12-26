@@ -103,14 +103,14 @@ export default function Founders() {
       image: "/images/founder-2.png",
     },
     {
-      name: "Mr. Gurudev Singh",
-      designation: "Director",
-      image: "/images/founder-3.png",
-    },
-    {
       name: "Mr. Biraj Sankar Mohanty",
       designation: "Director",
       image: "/images/founder-4.png",
+    },
+    {
+      name: "Mr. Gurudev Singh",
+      designation: "Director",
+      image: "/images/founder-3.png",
     },
   ];
 
@@ -142,7 +142,7 @@ export default function Founders() {
                   alt={`Photo of ${founder.name}, ${founder.designation}`}
                   width={259}
                   height={259}
-                  className="rounded-full object-cover border-4 border-[#EB7A2E] transition-transform duration-500 ease-in-out hover:scale-105"
+                  className="rounded-full object-cover border-4 border-[#EB7A2E] transition-transform duration-500 ease-in-out hover:scale-105 bg-white"
                 />
               </div>
 
